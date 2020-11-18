@@ -21,12 +21,12 @@ code {
 
 @media (min-width: 767px) and (max-width: 1367px) {
   html {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 
 @media (max-width: 767px) {
   html {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
