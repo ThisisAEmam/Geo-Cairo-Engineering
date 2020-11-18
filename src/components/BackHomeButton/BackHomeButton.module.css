@@ -1,0 +1,23 @@
+.BackHomeButton {
+  width: fit-content;
+  padding: 0;
+  text-decoration: none;
+  position: absolute;
+  top: 2rem;
+  left: 3rem;
+  display: flex;
+  align-items: center;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+
+.BackHomeButton:hover {
+  color: var(--primary);
+}
+
+.BackHomeButton p {
+  margin-left: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+}

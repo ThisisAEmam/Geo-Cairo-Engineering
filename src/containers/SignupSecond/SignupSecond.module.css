@@ -1,0 +1,73 @@
+.SignupSecond {
+  height: 80%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.SignupSecond .logo {
+  height: 3rem;
+  margin-bottom: 1rem;
+}
+
+.SignupSecond .plans p {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.SignupSecond .signupButton {
+  color: var(--primary);
+  margin-left: 0.25rem;
+  text-decoration: none;
+  transition: all 0.15s ease;
+}
+
+.SignupSecond .signupButton:hover {
+  opacity: 0.9;
+  text-decoration: underline;
+}
+
+.SignupSecond .navButtons {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.SignupSecond .submitButton,
+.SignupSecond .backButton {
+  background-color: var(--primary);
+  width: 40%;
+  height: 2.8rem;
+  margin-top: 1.5rem;
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  border-radius: 3px;
+}
+
+.SignupSecond .backButton {
+  background-color: #fff;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}
+
+.SignupSecond .backButton.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.SignupSecond .submitButton:hover,
+.SignupSecond .backButton:hover {
+  opacity: 0.9;
+}

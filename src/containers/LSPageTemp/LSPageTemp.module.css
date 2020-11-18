@@ -1,0 +1,108 @@
+.LSPageTemp {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #c4d5e4;
+  background: linear-gradient(to top, #bdcfdf, #cddce9);
+  background-color: #e4eee9;
+  background-image: linear-gradient(-235deg, #e4eee9 0%, #93a5ce 75%);
+  position: relative;
+}
+
+.loginContainer {
+  width: 65%;
+  height: 75%;
+  border-radius: 2px;
+  background: #fff;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+  display: flex;
+}
+
+.loginContainer.reverse {
+  flex-direction: row-reverse;
+  height: 80%;
+}
+
+.rightSide {
+  height: 100%;
+  width: 32%;
+  position: relative;
+}
+
+.rightSide .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: linear-gradient(to top, #20ded3, #f6fba2);
+  opacity: 0.5;
+}
+
+.rightSide img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-bottom-left-radius: 2px;
+  border-top-left-radius: 2px;
+}
+
+.leftSide {
+  height: 100%;
+  width: 68%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.leftSide .logo {
+  height: 3rem;
+  margin-bottom: 1rem;
+}
+
+.leftSide.fixedLogo .logo {
+  position: absolute;
+  top: 21%;
+}
+
+.leftSideContainer {
+  height: 70%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.leftSide.fixedLogo .leftSideContainer {
+  justify-content: center;
+}
+
+@media (min-width: 767px) and (max-width: 1367px) {
+  .LSPageTemp {
+    overflow: scroll;
+  }
+
+  .loginContainer {
+    width: 80%;
+  }
+}
+
+@media (max-width: 767px) {
+  .loginContainer {
+    width: 80%;
+    height: 80%;
+  }
+
+  .rightSide {
+    display: none;
+  }
+
+  .leftSide {
+    width: 100%;
+  }
+}

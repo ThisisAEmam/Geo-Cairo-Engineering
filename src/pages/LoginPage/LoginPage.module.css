@@ -1,0 +1,198 @@
+.LoginPage {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #c4d5e4;
+  background: linear-gradient(to top, #bdcfdf, #cddce9);
+  background-color: #e4eee9;
+  background-image: linear-gradient(-315deg, #e4eee9 0%, #93a5ce 74%);
+  position: relative;
+}
+
+.wrongCredentials {
+  position: absolute;
+  top: 2%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  background-color: rgb(189, 38, 38);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+.wrongCredentials span {
+  font-weight: 600;
+}
+
+.loginContainer {
+  width: 65%;
+  height: 75%;
+  border-radius: 2px;
+  background: #fff;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+  display: flex;
+}
+
+.rightSide {
+  height: 100%;
+  width: 32%;
+  position: relative;
+}
+
+.rightSide .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: linear-gradient(to top, #20ded3, #f6fba2);
+  opacity: 0.5;
+}
+
+.rightSide img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-bottom-left-radius: 2px;
+  border-top-left-radius: 2px;
+}
+
+.leftSide {
+  height: 100%;
+  width: 68%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.leftSide .logo {
+  height: 3rem;
+  margin-bottom: 1rem;
+}
+
+.leftSideContainer {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.inputsContainer {
+  width: 50%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.inputsContainer input {
+  width: 100%;
+  padding: 0.5rem;
+  height: 3rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  border: 1.5px solid #ddd;
+  outline: none;
+  border-radius: 3px;
+}
+
+.emailField {
+  margin-bottom: 0.75rem;
+}
+
+.inputsContainer input:active,
+.inputsContainer input:focus {
+  border-color: var(--primary);
+}
+
+.emptyPassword,
+.emptyEmail {
+  border-color: red;
+}
+
+.passwordWithIcon {
+  width: 100%;
+  height: fit-content;
+  position: relative;
+  margin-bottom: 0.75rem;
+}
+
+.eyeIcon {
+  position: absolute;
+  top: 50%;
+  right: 0.5rem;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  cursor: pointer;
+}
+
+.eyeIcon i {
+  font-size: 1.3rem;
+  color: #888;
+}
+
+.forgetPassword {
+  color: var(--primary);
+  font-weight: 500;
+  width: 100%;
+  text-align: right;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  text-decoration: none;
+}
+
+.forgetPassword:hover {
+  opacity: 0.9;
+  text-decoration: underline;
+}
+
+.submitButton {
+  background-color: var(--primary);
+  width: 100%;
+  height: 2.8rem;
+  margin-top: 1.5rem;
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  border-radius: 3px;
+}
+
+.submitButton:hover {
+  opacity: 0.9;
+}
+
+@media (min-width: 767px) and (max-width: 1367px) {
+  .loginContainer {
+    width: 80%;
+  }
+}
+
+@media (max-width: 767px) {
+  .loginContainer {
+    width: 80%;
+    height: 80%;
+  }
+
+  .rightSide {
+    display: none;
+  }
+
+  .leftSide {
+    width: 100%;
+  }
+
+  .inputsContainer {
+    width: 80%;
+  }
+}

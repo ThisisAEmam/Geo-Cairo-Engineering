@@ -1,0 +1,170 @@
+.SignupFirst {
+  height: 80%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.SignupFirst .upperPart {
+  width: 50%;
+  display: flex;
+  height: fit-content;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.SignupFirst .upperPart p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.SignupFirst .logo {
+  height: 3rem;
+  margin-bottom: 1rem;
+}
+
+.SignupFirst .signupButton {
+  color: var(--primary);
+  margin-left: 0.25rem;
+  text-decoration: none;
+  transition: all 0.15s ease;
+}
+
+.SignupFirst .signupButton:hover {
+  opacity: 0.9;
+  text-decoration: underline;
+}
+
+.SignupFirst .inputsContainer {
+  width: 50%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.SignupFirst input {
+  width: 100%;
+  padding: 0.5rem;
+  height: 3rem;
+  font-size: 1.1rem;
+  margin-bottom: 0;
+  font-weight: 500;
+  border: 1.5px solid #ddd;
+  outline: none;
+  border-radius: 3px;
+}
+
+.SignupFirst input::placeholder {
+  color: #aaa;
+}
+
+.SignupFirst input.emailField {
+  margin-bottom: 0.75rem;
+}
+
+.SignupFirst input:active,
+.SignupFirst input:focus {
+  border-color: var(--primary);
+}
+
+.SignupFirst .emptyPassword,
+.SignupFirst .emptyConfirmPassword,
+.SignupFirst .emptyEmail {
+  border-color: red;
+}
+
+.SignupFirst .passwordWithIcon {
+  width: 100%;
+  height: fit-content;
+  position: relative;
+  margin-bottom: 0.75rem;
+}
+
+.SignupFirst .eyeIcon {
+  position: absolute;
+  top: 50%;
+  right: 0.5rem;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  cursor: pointer;
+}
+
+.SignupFirst .eyeIcon i {
+  font-size: 1.3rem;
+  color: #888;
+}
+
+.SignupFirst .forgetPassword {
+  color: var(--primary);
+  font-weight: 500;
+  width: 100%;
+  text-align: right;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  text-decoration: none;
+}
+
+.SignupFirst .forgetPassword:hover {
+  opacity: 0.9;
+  text-decoration: underline;
+}
+
+.SignupFirst .navButtons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.SignupFirst .submitButton,
+.SignupFirst .backButton {
+  background-color: var(--primary);
+  width: 40%;
+  height: 2.8rem;
+  margin-top: 1.5rem;
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  border-radius: 3px;
+}
+
+.SignupFirst .backButton {
+  background-color: #fff;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}
+
+.SignupFirst .backButton.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.SignupFirst .submitButton:hover,
+.SignupFirst .backButton:hover {
+  opacity: 0.9;
+}
+
+@media (min-width: 767px) and (max-width: 1367px) {
+  .SignupFirst .socialMediaButtons {
+    width: 40%;
+  }
+}
+
+@media (max-width: 767px) {
+  .SignupFirst .socialMediaButtons {
+    width: 80%;
+  }
+
+  .SignupFirst .inputsContainer {
+    width: 80%;
+  }
+}

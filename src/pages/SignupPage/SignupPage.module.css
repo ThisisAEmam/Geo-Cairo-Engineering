@@ -1,0 +1,237 @@
+.SignupPage {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #c4d5e4;
+  background: linear-gradient(to top, #bdcfdf, #cddce9);
+  background-color: #e4eee9;
+  background-image: linear-gradient(-315deg, #e4eee9 0%, #93a5ce 74%);
+}
+
+.wrongCredentials {
+  position: absolute;
+  top: 2%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  background-color: rgb(189, 38, 38);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+.wrongCredentials span {
+  font-weight: 600;
+}
+
+.loginContainer {
+  width: 70%;
+  height: 80%;
+  border-radius: 2px;
+  background: #fff;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+  display: flex;
+}
+
+.rightSide {
+  height: 100%;
+  width: 32%;
+  position: relative;
+}
+
+.rightSide .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: linear-gradient(to top, #20ded3, #f6fba2);
+  opacity: 0.5;
+}
+
+.rightSide img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-bottom-left-radius: 2px;
+  border-top-left-radius: 2px;
+}
+
+.leftSide {
+  height: 100%;
+  width: 68%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.leftSide .logo {
+  height: 3rem;
+  margin-bottom: 1rem;
+}
+
+.leftSideContainer {
+  height: 80%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.leftSide .signupButton {
+  color: var(--primary);
+  margin-left: 0.25rem;
+  text-decoration: none;
+  transition: all 0.15s ease;
+}
+
+.leftSide .signupButton:hover {
+  opacity: 0.9;
+  text-decoration: underline;
+}
+
+.leftSide .inputsContainer {
+  width: 50%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.leftSide input {
+  width: 100%;
+  padding: 0.5rem;
+  height: 3rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  border: 1.5px solid #ddd;
+  outline: none;
+  border-radius: 3px;
+}
+
+.leftSide input:active,
+.leftSide input:focus {
+  border-color: var(--primary);
+}
+
+.leftSide .emptyPassword,
+.leftSide .emptyConfirmPassword,
+.leftSide .emptyEmail {
+  border-color: red;
+}
+
+.leftSide .passwordWithIcon {
+  width: 100%;
+  height: fit-content;
+  position: relative;
+}
+
+.leftSide .eyeIcon {
+  position: absolute;
+  top: 50%;
+  right: 0.5rem;
+  transform: translate(-50%, -80%);
+  z-index: 100;
+  cursor: pointer;
+}
+
+.leftSide .eyeIcon i {
+  font-size: 1.3rem;
+  color: #333;
+}
+
+.leftSide .forgetPassword {
+  color: var(--primary);
+  font-weight: 500;
+  width: 100%;
+  text-align: right;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  text-decoration: none;
+}
+
+.leftSide .forgetPassword:hover {
+  opacity: 0.9;
+  text-decoration: underline;
+}
+
+.leftSide .navButtons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.leftSide .submitButton,
+.leftSide .backButton {
+  background-color: var(--primary);
+  width: 40%;
+  height: 2.8rem;
+  margin-top: 1.5rem;
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  border-radius: 3px;
+}
+
+.leftSide .backButton {
+  background-color: #fff;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}
+
+.leftSide .backButton.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.leftSide .submitButton:hover,
+.leftSide .backButton:hover {
+  opacity: 0.9;
+}
+
+@media (min-width: 767px) and (max-width: 1367px) {
+  .loginContainer {
+    width: 80%;
+  }
+
+  .leftSide .socialMediaButtons {
+    width: 40%;
+  }
+}
+
+@media (max-width: 767px) {
+  .loginContainer {
+    width: 80%;
+    height: 80%;
+  }
+
+  .rightSide {
+    display: none;
+  }
+
+  .leftSide {
+    width: 100%;
+  }
+
+  .leftSide .socialMediaButtons {
+    width: 80%;
+  }
+
+  .leftSide .inputsContainer {
+    width: 80%;
+  }
+}

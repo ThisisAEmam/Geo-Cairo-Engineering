@@ -1,0 +1,36 @@
+.FGButton {
+  height: 3rem;
+  width: 100%;
+  border: 1px solid #e7e7e7;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  border-radius: 3px;
+}
+
+.FGButton:hover {
+  opacity: 0.9;
+}
+
+.FGButton.facebook {
+  background: #3b5998;
+}
+
+.FGButton.google {
+  background: #4285f4;
+}
+
+.FGButton i {
+  margin: 0 1.5rem;
+  width: 7%;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.FGButton .text {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 500;
+}

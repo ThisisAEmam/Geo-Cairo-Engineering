@@ -1,0 +1,64 @@
+.LoginSignupLower {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.LoginSignupLower .or {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 90%;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.3);
+  margin: 2rem 0;
+}
+.LoginSignupLower .or::before,
+.LoginSignupLower .or::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1.5px solid rgba(0, 0, 0, 0.2);
+}
+.LoginSignupLower .or::before {
+  margin-right: 0.5rem;
+}
+.LoginSignupLower .or::after {
+  margin-left: 0.5rem;
+}
+
+.LoginSignupLower .socialMediaButtons {
+  width: 35%;
+  margin-bottom: 2rem;
+}
+
+.LoginSignupLower h4 {
+  font-weight: 500;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.LoginSignupLower .signupButton {
+  color: var(--primary);
+  margin-left: 0.25rem;
+  text-decoration: none;
+  transition: all 0.15s ease;
+}
+
+.LoginSignupLower .signupButton:hover {
+  opacity: 0.9;
+  text-decoration: underline;
+}
+
+@media (min-width: 767px) and (max-width: 1367px) {
+  .LoginSignupLower .socialMediaButtons {
+    width: 40%;
+  }
+}
+
+@media (max-width: 767px) {
+  .LoginSignupLower .socialMediaButtons {
+    width: 80%;
+  }
+}
